@@ -184,9 +184,11 @@ $(document).ready(function() {
 
                 // соответственно вверху на строке 35 эту переменную   allCoiseBox
 
-                allCoiseBox = $(this).next($(".all-coice-block"));
+                // allCoiseBox = $(this).next($(".all-coice-block"));
 
-                allCoiseBox.children(".all-coice").delay(400).fadeOut(700);
+                // allCoiseBox.children(".all-coice").delay(400).fadeOut(700);
+
+                // allCoiseBox.detach().prepend($(this));
 
                 // -------------------------
 
@@ -198,9 +200,11 @@ $(document).ready(function() {
 
                 // Добавил этот код --------
 
-                allCoiseBox = $(this).next($(".all-coice-block"));
+                // allCoiseBox = $(this).next($(".all-coice-block"));
 
-                allCoiseBox.children(".all-coice").delay(400).fadeIn(700);
+                // allCoiseBox.children(".all-coice").delay(400).fadeIn(700);
+
+                // allCoiseBox.detach().append($(this));
 
                 // -------------------------
 
