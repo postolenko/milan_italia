@@ -4406,6 +4406,13 @@ footer {
     color: #373940;
 }
 
+.popup .coice-box {
+    display: inline-block;
+    vertical-align: top;
+    width: 31%;
+    padding: 25px 1% 10px 1%;
+}
+
 
 /*-- /Popup --*/
 
