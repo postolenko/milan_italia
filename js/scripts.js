@@ -180,33 +180,11 @@ $(document).ready(function() {
 
                 $(this).text("Еще");
 
-                // Добавил этот код --------
-
-                // соответственно вверху на строке 35 эту переменную   allCoiseBox
-
-                // allCoiseBox = $(this).next($(".all-coice-block"));
-
-                // allCoiseBox.children(".all-coice").delay(400).fadeOut(700);
-
-                // allCoiseBox.detach().prepend($(this));
-
-                // -------------------------
-
             } else {
 
                 coiceBoxActive.animate({"height" : coiceBoxHeight + "px"}, 500);
 
                 $(this).text("Скрыть");
-
-                // Добавил этот код --------
-
-                // allCoiseBox = $(this).next($(".all-coice-block"));
-
-                // allCoiseBox.children(".all-coice").delay(400).fadeIn(700);
-
-                // allCoiseBox.detach().append($(this));
-
-                // -------------------------
 
             }
 

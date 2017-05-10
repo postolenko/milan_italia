@@ -236,6 +236,14 @@
 
 	/*-- /Товар --*/
 
+	/*-- Каталог --*/
+
+	.popup .coice-box {
+	    width: 49%;
+	}
+
+	/*-- /Каталог --*/
+
 	/*-- Popup --*/
 
 	.popup-content {
@@ -908,6 +916,14 @@
 	    line-height: 18px;
 	    padding: 5px;
 	}
+
+	/*-- Каталог --*/
+
+	.popup .coice-box {
+	    width: 100%;
+	}
+
+	/*-- /Каталог --*/
 
 }
 
