@@ -1858,11 +1858,12 @@ section.promo-section {
 .catalog-nav li {
     display: inline-block;
     vertical-align: top;
-    width: 11.11%;
+    width: 16.66%;
     padding: 20px 0;
 }
 
 .catalog-nav li a {
+    display: block;
     text-align: center;
     position: relative;
 }
@@ -1870,7 +1871,7 @@ section.promo-section {
 .icon-box {
     display: block;
     height: 60px;
-    margin: 4px 0;
+    margin: 3px 0;
 }
 
 .icon-box .icon,
