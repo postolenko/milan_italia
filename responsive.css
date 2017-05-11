@@ -608,8 +608,8 @@
 
 	/*-- Footer --*/
 
-	.footer .row {
-	    background-position: left 0;
+	.map-link {
+		display: none;
 	}
 
 	.contacts {

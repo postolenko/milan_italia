@@ -52,118 +52,26 @@
 						</button>
 
 					</div>
+
+					<!-- Вот тут что то изменил -->
+					<!-- Снизу добавил inners-navs-block
+					 inner-menu вынес из списка 
+					 и вставил из всех в inners-navs-block
+					 -->
 					
 					<div class="main-nav">
 
 						<ul>
-							<li><a href="#" class="active">Каталог мебели</a>
+
+							<li><a href="#" class="active" data-item-name="link_1">Каталог мебели</a>
 								<button class="show-menu-btn" type="button">
 									<i class="fa fa-arrow-circle-down" aria-hidden="true"></i>
 								</button>
-								<div class="inner-menu">
-									<ul class="inner-menu-list catalog-nav">
-
-										<li>
-											<a href="#">
-												<i class="catalog-icon icon-1"></i>
-												<p>Спальни</p>
-											</a>
-										</li>
-
-										<li>
-											<a href="#">
-												<i class="catalog-icon icon-2"></i>
-												<p>Гостиные</p>											
-											</a>
-										</li>
-
-										<li>
-											<a href="#">
-												<i class="catalog-icon icon-3"></i>
-												<p>Мягкая мебель</p>											
-											</a>
-										</li>
-
-										<li>
-											<a href="#">
-												<i class="catalog-icon icon-4"></i>
-												<p>Кухни</p>											
-											</a>
-										</li>
-
-										<li>
-											<a href="#">
-												<i class="catalog-icon icon-5"></i>
-												<p>Детские</p>											
-											</a>
-										</li>
-
-										<li>
-											<a href="#">
-												<i class="catalog-icon icon-6"></i>
-												<p>Кабинеты</p>											
-											</a>
-										</li>
-
-										<li>
-											<a href="#">
-												<i class="catalog-icon icon-7"></i>
-												<p>Стенки</p>											
-											</a>
-										</li>
-
-										<li>
-											<a href="#">
-												<i class="catalog-icon icon-8"></i>
-												<p>Прихожие</p>											
-											</a>
-										</li>
-
-										<li>
-											<a href="#">
-												<i class="catalog-icon icon-9"></i>
-												<p>Свет</p>											
-											</a>
-										</li>
-
-									</ul>
-								</div>
 							</li>
-							<li><a href="#">Фабрики</a>
+							<li><a href="#" data-item-name="link_2">Фабрики</a>
 								<button class="show-menu-btn" type="button">
 									<i class="fa fa-arrow-circle-down" aria-hidden="true"></i>
 								</button>
-								<div class="inner-menu">
-									<ul class="inner-menu-list sort-nav">
-										<li><a href="#">Все</a></li>
-										<li><a href="#" class="active">A</a></li>
-										<li><a href="#">B</a></li>
-										<li><a href="#">C</a></li>
-										<li><a href="#">D</a></li>
-										<li><a href="#">E</a></li>
-										<li><a href="#">F</a></li>
-										<li><a href="#">G</a></li>
-										<li><a href="#">H</a></li>
-										<li><a href="#">I</a></li>
-										<li><a href="#">J</a></li>
-										<li><a href="#">K</a></li>
-										<li><a href="#">L</a></li>
-										<li><a href="#">M</a></li>
-										<li><a href="#">N</a></li>
-										<li><a href="#">O</a></li>
-										<li><a href="#">P</a></li>
-										<li><a href="#">Q</a></li>
-										<li><a href="#">R</a></li>
-										<li><a href="#">S</a></li>
-										<li><a href="#">T</a></li>
-										<li><a href="#">U</a></li>
-										<li><a href="#">V</a></li>
-										<li><a href="#">W</a></li>
-										<li><a href="#">X</a></li>
-										<li><a href="#">Y</a></li>
-										<li><a href="#">Z</a></li>
-									</ul>
-								</div>
 							</li>
 							<li><a href="#">Услуги</a></li>
 							<li><a href="#">О компании</a></li>
@@ -171,7 +79,167 @@
 
 						</ul>
 
+						<div class="inners-navs-block">
+
+							<div class="inner-menu" data-inner-menu-name="link_1">
+								<ul class="inner-menu-list catalog-nav">
+									<li>
+										<a href="#">
+											<div class="icon-box">
+												<div class="icon">
+													<img src="img/catalog_icons/catalog_icon_01.png" alt="">
+												</div>
+												<div class="icon-hover">
+													<img src="img/catalog_icons/catalog_icon_01_hover.png" alt="">
+												</div>
+											</div>
+											<p>Спальни</p>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<div class="icon-box">
+												<div class="icon">
+													<img src="img/catalog_icons/catalog_icon_02.png" alt="">
+												</div>
+												<div class="icon-hover">
+													<img src="img/catalog_icons/catalog_icon_02_hover.png" alt="">
+												</div>
+											</div>
+											<p>Гостиные</p>											
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<div class="icon-box">
+												<div class="icon">
+													<img src="img/catalog_icons/catalog_icon_03.png" alt="">
+												</div>
+												<div class="icon-hover">
+													<img src="img/catalog_icons/catalog_icon_03_hover.png" alt="">
+												</div>
+											</div>
+											<p>Мягкая мебель</p>											
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<div class="icon-box">
+												<div class="icon">
+													<img src="img/catalog_icons/catalog_icon_04.png" alt="">
+												</div>
+												<div class="icon-hover">
+													<img src="img/catalog_icons/catalog_icon_04_hover.png" alt="">
+												</div>
+											</div>
+											<p>Кухни</p>					
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<div class="icon-box">
+												<div class="icon">
+													<img src="img/catalog_icons/catalog_icon_05.png" alt="">
+												</div>
+												<div class="icon-hover">
+													<img src="img/catalog_icons/catalog_icon_05_hover.png" alt="">
+												</div>
+											</div>
+											<p>Детские</p>											
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<div class="icon-box">
+												<div class="icon">
+													<img src="img/catalog_icons/catalog_icon_06.png" alt="">
+												</div>
+												<div class="icon-hover">
+													<img src="img/catalog_icons/catalog_icon_06_hover.png" alt="">
+												</div>
+											</div>
+											<p>Кабинеты</p>											
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<div class="icon-box">
+												<div class="icon">
+													<img src="img/catalog_icons/catalog_icon_07.png" alt="">
+												</div>
+												<div class="icon-hover">
+													<img src="img/catalog_icons/catalog_icon_07_hover.png" alt="">
+												</div>
+											</div>
+											<p>Стенки</p>											
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<div class="icon-box">
+												<div class="icon">
+													<img src="img/catalog_icons/catalog_icon_08.png" alt="">
+												</div>
+												<div class="icon-hover">
+													<img src="img/catalog_icons/catalog_icon_08_hover.png" alt="">
+												</div>
+											</div>
+											<p>Прихожие</p>											
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<div class="icon-box">
+												<div class="icon">
+													<img src="img/catalog_icons/catalog_icon_09.png" alt="">
+												</div>
+												<div class="icon-hover">
+													<img src="img/catalog_icons/catalog_icon_09_hover.png" alt="">
+												</div>
+											</div>
+											<p>Свет</p>											
+										</a>
+									</li>
+								</ul>
+							</div>
+
+							<div class="inner-menu" data-inner-menu-name="link_2">
+								<ul class="inner-menu-list sort-nav">
+									<li><a href="#">Все</a></li>
+									<li><a href="#" class="active">A</a></li>
+									<li><a href="#">B</a></li>
+									<li><a href="#">C</a></li>
+									<li><a href="#">D</a></li>
+									<li><a href="#">E</a></li>
+									<li><a href="#">F</a></li>
+									<li><a href="#">G</a></li>
+									<li><a href="#">H</a></li>
+									<li><a href="#">I</a></li>
+									<li><a href="#">J</a></li>
+									<li><a href="#">K</a></li>
+									<li><a href="#">L</a></li>
+									<li><a href="#">M</a></li>
+									<li><a href="#">N</a></li>
+									<li><a href="#">O</a></li>
+									<li><a href="#">P</a></li>
+									<li><a href="#">Q</a></li>
+									<li><a href="#">R</a></li>
+									<li><a href="#">S</a></li>
+									<li><a href="#">T</a></li>
+									<li><a href="#">U</a></li>
+									<li><a href="#">V</a></li>
+									<li><a href="#">W</a></li>
+									<li><a href="#">X</a></li>
+									<li><a href="#">Y</a></li>
+									<li><a href="#">Z</a></li>
+								</ul>
+							</div>
+
+						</div>
+
 					</div>
+
+					<!--  -->
 
 				</div>
 
@@ -400,140 +468,158 @@
 
 								<h2 class="popup-h"><span>Фабрики</span></h2>
 
-								<div class="coice-box">
+								<!-- Все чекбоксы обернул в тег форм -->
 
-									<div class="checkbox-block">
-										<input type="checkbox" name="chose_box" id="coice_7_popup">
-										<label for="coice_7_popup">Все</label>
-									</div>
-									<div class="checkbox-block">
-										<input type="checkbox" name="chose_box" id="coice_8_popup">
-										<label for="coice_8_popup">G. Moscatelli</label>
-									</div>
-									<div class="checkbox-block">
-										<input type="checkbox" name="chose_box" id="coice_9_popup">
-										<label for="coice_9_popup">Dalcin</label>
-									</div>
-									<div class="checkbox-block">
-										<input type="checkbox" name="chose_box" id="coice_10_popup">
-										<label for="coice_10_popup">B&B italia</label>
-									</div>
-									<div class="checkbox-block">
-										<input type="checkbox" name="chose_box" id="coice_11_popup">
-										<label for="coice_11_popup">B.D. Barcelona design</label>
-									</div>
-									<div class="checkbox-block">
-										<input type="checkbox" name="chose_box" id="coice_12_popup">
-										<label for="coice_12_popup">Galimberti nino</label>
-									</div>
-									<div class="checkbox-block">
-										<input type="checkbox" name="chose_box" id="coice_13_popup">
-										<label for="coice_13_popup">Dalcin</label>
-									</div>
-									<div class="checkbox-block">
-										<input type="checkbox" name="chose_box" id="coice_14_popup">
-										<label for="coice_14_popup">B&B italia</label>
-									</div>
-									<div class="checkbox-block">
-										<input type="checkbox" name="chose_box" id="coice_15_popup">
-										<label for="coice_15_popup">B.D. Barcelona design</label>
-									</div>
-									<div class="checkbox-block">
-										<input type="checkbox" name="chose_box" id="coice_16_popup">
-										<label for="coice_16_popup">Galimberti nino</label>
-									</div>
-									<div class="checkbox-block">
-										<input type="checkbox" name="chose_box" id="coice_17_popup">
-										<label for="coice_17_popup">B&B italia</label>
-									</div>
-									<div class="checkbox-block">
-										<input type="checkbox" name="chose_box" id="coice_18_popup">
-										<label for="coice_18_popup">B.D. Barcelona design</label>
-									</div>
-									<div class="checkbox-block">
-										<input type="checkbox" name="chose_box" id="coice_19_popup">
-										<label for="coice_19_popup">Galimberti nino</label>
-									</div>
-								</div>
+								<form>
 
-								<div class="coice-box">
+									<div class="coice-box">
 
-									<div class="checkbox-block">
-										<input type="checkbox" name="chose_box" id="coice_7_popup_1">
-										<label for="coice_7_popup_1">Все</label>
+										<div class="checkbox-block">
+											<input type="checkbox" name="chose_box" id="coice_7_popup">
+											<label for="coice_7_popup">Все</label>
+										</div>
+										<div class="checkbox-block">
+											<input type="checkbox" name="chose_box" id="coice_8_popup">
+											<label for="coice_8_popup">G. Moscatelli</label>
+										</div>
+										<div class="checkbox-block">
+											<input type="checkbox" name="chose_box" id="coice_9_popup">
+											<label for="coice_9_popup">Dalcin</label>
+										</div>
+										<div class="checkbox-block">
+											<input type="checkbox" name="chose_box" id="coice_10_popup">
+											<label for="coice_10_popup">B&B italia</label>
+										</div>
+										<div class="checkbox-block">
+											<input type="checkbox" name="chose_box" id="coice_11_popup">
+											<label for="coice_11_popup">B.D. Barcelona design</label>
+										</div>
+										<div class="checkbox-block">
+											<input type="checkbox" name="chose_box" id="coice_12_popup">
+											<label for="coice_12_popup">Galimberti nino</label>
+										</div>
+										<div class="checkbox-block">
+											<input type="checkbox" name="chose_box" id="coice_13_popup">
+											<label for="coice_13_popup">Dalcin</label>
+										</div>
+										<div class="checkbox-block">
+											<input type="checkbox" name="chose_box" id="coice_14_popup">
+											<label for="coice_14_popup">B&B italia</label>
+										</div>
+										<div class="checkbox-block">
+											<input type="checkbox" name="chose_box" id="coice_15_popup">
+											<label for="coice_15_popup">B.D. Barcelona design</label>
+										</div>
+										<div class="checkbox-block">
+											<input type="checkbox" name="chose_box" id="coice_16_popup">
+											<label for="coice_16_popup">Galimberti nino</label>
+										</div>
+										<div class="checkbox-block">
+											<input type="checkbox" name="chose_box" id="coice_17_popup">
+											<label for="coice_17_popup">B&B italia</label>
+										</div>
+										<div class="checkbox-block">
+											<input type="checkbox" name="chose_box" id="coice_18_popup">
+											<label for="coice_18_popup">B.D. Barcelona design</label>
+										</div>
+										<div class="checkbox-block">
+											<input type="checkbox" name="chose_box" id="coice_19_popup">
+											<label for="coice_19_popup">Galimberti nino</label>
+										</div>
 									</div>
-									<div class="checkbox-block">
-										<input type="checkbox" name="chose_box" id="coice_8_popup_1">
-										<label for="coice_8_popup_1">G. Moscatelli</label>
-									</div>
-									<div class="checkbox-block">
-										<input type="checkbox" name="chose_box" id="coice_9_popup_1">
-										<label for="coice_9_popup_1">Dalcin</label>
-									</div>
-									<div class="checkbox-block">
-										<input type="checkbox" name="chose_box" id="coice_10_popup_1">
-										<label for="coice_10_popup_1">B&B italia</label>
-									</div>
-									<div class="checkbox-block">
-										<input type="checkbox" name="chose_box" id="coice_11_popup_1">
-										<label for="coice_11_popup_1">B.D. Barcelona design</label>
-									</div>
-									<div class="checkbox-block">
-										<input type="checkbox" name="chose_box" id="coice_12_popup_1">
-										<label for="coice_12_popup_1">Galimberti nino</label>
-									</div>
-									<div class="checkbox-block">
-										<input type="checkbox" name="chose_box" id="coice_13_popup_1">
-										<label for="coice_13_popup_1">Dalcin</label>
-									</div>
-									<div class="checkbox-block">
-										<input type="checkbox" name="chose_box" id="coice_14_popup_1">
-										<label for="coice_14_popup_1">B&B italia</label>
-									</div>
-									<div class="checkbox-block">
-										<input type="checkbox" name="chose_box" id="coice_15_popup_1">
-										<label for="coice_15_popup_1">B.D. Barcelona design</label>
-									</div>
-									<div class="checkbox-block">
-										<input type="checkbox" name="chose_box" id="coice_16_popup_1">
-										<label for="coice_16_popup_1">Galimberti nino</label>
-									</div>
-									<div class="checkbox-block">
-										<input type="checkbox" name="chose_box" id="coice_17_popup_1">
-										<label for="coice_17_popup_1">B&B italia</label>
-									</div>
-									<div class="checkbox-block">
-										<input type="checkbox" name="chose_box" id="coice_18_popup_1">
-										<label for="coice_18_popup_1">B.D. Barcelona design</label>
-									</div>
-									<div class="checkbox-block">
-										<input type="checkbox" name="chose_box" id="coice_19_popup_1">
-										<label for="coice_19_popup_1">Galimberti nino</label>
-									</div>
-								</div>
 
-								<div class="coice-box">
-									<div class="checkbox-block">
-										<input type="checkbox" name="chose_box" id="coice_20_popup_1">
-										<label for="coice_20_popup_1">B.D. Barcelona design</label>
+									<div class="coice-box">
+
+										<div class="checkbox-block">
+											<input type="checkbox" name="chose_box" id="coice_7_popup_1">
+											<label for="coice_7_popup_1">Все</label>
+										</div>
+										<div class="checkbox-block">
+											<input type="checkbox" name="chose_box" id="coice_8_popup_1">
+											<label for="coice_8_popup_1">G. Moscatelli</label>
+										</div>
+										<div class="checkbox-block">
+											<input type="checkbox" name="chose_box" id="coice_9_popup_1">
+											<label for="coice_9_popup_1">Dalcin</label>
+										</div>
+										<div class="checkbox-block">
+											<input type="checkbox" name="chose_box" id="coice_10_popup_1">
+											<label for="coice_10_popup_1">B&B italia</label>
+										</div>
+										<div class="checkbox-block">
+											<input type="checkbox" name="chose_box" id="coice_11_popup_1">
+											<label for="coice_11_popup_1">B.D. Barcelona design</label>
+										</div>
+										<div class="checkbox-block">
+											<input type="checkbox" name="chose_box" id="coice_12_popup_1">
+											<label for="coice_12_popup_1">Galimberti nino</label>
+										</div>
+										<div class="checkbox-block">
+											<input type="checkbox" name="chose_box" id="coice_13_popup_1">
+											<label for="coice_13_popup_1">Dalcin</label>
+										</div>
+										<div class="checkbox-block">
+											<input type="checkbox" name="chose_box" id="coice_14_popup_1">
+											<label for="coice_14_popup_1">B&B italia</label>
+										</div>
+										<div class="checkbox-block">
+											<input type="checkbox" name="chose_box" id="coice_15_popup_1">
+											<label for="coice_15_popup_1">B.D. Barcelona design</label>
+										</div>
+										<div class="checkbox-block">
+											<input type="checkbox" name="chose_box" id="coice_16_popup_1">
+											<label for="coice_16_popup_1">Galimberti nino</label>
+										</div>
+										<div class="checkbox-block">
+											<input type="checkbox" name="chose_box" id="coice_17_popup_1">
+											<label for="coice_17_popup_1">B&B italia</label>
+										</div>
+										<div class="checkbox-block">
+											<input type="checkbox" name="chose_box" id="coice_18_popup_1">
+											<label for="coice_18_popup_1">B.D. Barcelona design</label>
+										</div>
+										<div class="checkbox-block">
+											<input type="checkbox" name="chose_box" id="coice_19_popup_1">
+											<label for="coice_19_popup_1">Galimberti nino</label>
+										</div>
 									</div>
-									<div class="checkbox-block">
-										<input type="checkbox" name="chose_box" id="coice_21_popup_1">
-										<label for="coice_21_popup_1">Galimberti nino</label>
+
+									<div class="coice-box">
+										<div class="checkbox-block">
+											<input type="checkbox" name="chose_box" id="coice_20_popup_1">
+											<label for="coice_20_popup_1">B.D. Barcelona design</label>
+										</div>
+										<div class="checkbox-block">
+											<input type="checkbox" name="chose_box" id="coice_21_popup_1">
+											<label for="coice_21_popup_1">Galimberti nino</label>
+										</div>
+										<div class="checkbox-block">
+											<input type="checkbox" name="chose_box" id="coice_22_popup_1">
+											<label for="coice_22_popup_1">B&B italia</label>
+										</div>
+										<div class="checkbox-block">
+											<input type="checkbox" name="chose_box" id="coice_23_popup_1">
+											<label for="coice_23_popup_1">B.D. Barcelona design</label>
+										</div>
+										<div class="checkbox-block">
+											<input type="checkbox" name="chose_box" id="coice_24_popup_1">
+											<label for="coice_24_popup_1">Galimberti nino</label>
+										</div>
 									</div>
-									<div class="checkbox-block">
-										<input type="checkbox" name="chose_box" id="coice_22_popup_1">
-										<label for="coice_22_popup_1">B&B italia</label>
+
+									<!-- Добавь кнопку отправики формы .submit-btn-box -->
+
+									<div class="submit-btn-box">
+
+										<button class="submit-btn" type="submit">Выбрать</button>
+
 									</div>
-									<div class="checkbox-block">
-										<input type="checkbox" name="chose_box" id="coice_23_popup_1">
-										<label for="coice_23_popup_1">B.D. Barcelona design</label>
-									</div>
-									<div class="checkbox-block">
-										<input type="checkbox" name="chose_box" id="coice_24_popup_1">
-										<label for="coice_24_popup_1">Galimberti nino</label>
-									</div>
-								</div>
+
+									<!--  -->
+
+								</form>
+
+								<!--  -->
 
 							</div>
 
@@ -550,160 +636,178 @@
 
 								<h2 class="popup-h"><span>Фабрики 2</span></h2>
 
-								<div class="coice-box">
+								<!-- Все чекбоксы обернул в тег форм -->
 
-									<div class="checkbox-block">
-										<input type="checkbox" name="chose_box" id="coice_1_popup_2">
-										<label for="coice_1_popup_2">Все</label>
-									</div>
-									<div class="checkbox-block">
-										<input type="checkbox" name="chose_box" id="coice_2_popup_2">
-										<label for="coice_2_popup_2">G. Moscatelli</label>
-									</div>
-									<div class="checkbox-block">
-										<input type="checkbox" name="chose_box" id="coice_3_popup_2">
-										<label for="coice_3_popup_2">Dalcin</label>
-									</div>
-									<div class="checkbox-block">
-										<input type="checkbox" name="chose_box" id="coice_4_popup_2">
-										<label for="coice_4_popup_2">B&B italia</label>
-									</div>
-									<div class="checkbox-block">
-										<input type="checkbox" name="chose_box" id="coice_5_popup_2">
-										<label for="coice_5_popup_2">B.D. Barcelona design</label>
-									</div>
-									<div class="checkbox-block">
-										<input type="checkbox" name="chose_box" id="coice_6_popup_2">
-										<label for="coice_6_popup_2">Galimberti nino</label>
-									</div>
-									<div class="checkbox-block">
-										<input type="checkbox" name="chose_box" id="coice_7_popup_2">
-										<label for="coice_7_popup_2">Dalcin</label>
-									</div>
-									<div class="checkbox-block">
-										<input type="checkbox" name="chose_box" id="coice_8_popup_2">
-										<label for="coice_8_popup_2">B&B italia</label>
-									</div>
-									<div class="checkbox-block">
-										<input type="checkbox" name="chose_box" id="coice_9_popup_2">
-										<label for="coice_9_popup_2">B.D. Barcelona design</label>
-									</div>
-									<div class="checkbox-block">
-										<input type="checkbox" name="chose_box" id="coice_10_popup_2">
-										<label for="coice_10_popup_2">Galimberti nino</label>
-									</div>
-									<div class="checkbox-block">
-										<input type="checkbox" name="chose_box" id="coice_11_popup_2">
-										<label for="coice_11_popup_2">B&B italia</label>
-									</div>
-									<div class="checkbox-block">
-										<input type="checkbox" name="chose_box" id="coice_12_popup_2">
-										<label for="coice_12_popup_2">B.D. Barcelona design</label>
-									</div>
-									<div class="checkbox-block">
-										<input type="checkbox" name="chose_box" id="coice_13_popup_2">
-										<label for="coice_13_popup_2">Galimberti nino</label>
-									</div>
-								</div>
+								<form>
 
-								<div class="coice-box">
+									<div class="coice-box">
 
-									<div class="checkbox-block">
-										<input type="checkbox" name="chose_box" id="coice_14_popup_2">
-										<label for="coice_14_popup_2">Все</label>
+										<div class="checkbox-block">
+											<input type="checkbox" name="chose_box" id="coice_1_popup_2">
+											<label for="coice_1_popup_2">Все</label>
+										</div>
+										<div class="checkbox-block">
+											<input type="checkbox" name="chose_box" id="coice_2_popup_2">
+											<label for="coice_2_popup_2">G. Moscatelli</label>
+										</div>
+										<div class="checkbox-block">
+											<input type="checkbox" name="chose_box" id="coice_3_popup_2">
+											<label for="coice_3_popup_2">Dalcin</label>
+										</div>
+										<div class="checkbox-block">
+											<input type="checkbox" name="chose_box" id="coice_4_popup_2">
+											<label for="coice_4_popup_2">B&B italia</label>
+										</div>
+										<div class="checkbox-block">
+											<input type="checkbox" name="chose_box" id="coice_5_popup_2">
+											<label for="coice_5_popup_2">B.D. Barcelona design</label>
+										</div>
+										<div class="checkbox-block">
+											<input type="checkbox" name="chose_box" id="coice_6_popup_2">
+											<label for="coice_6_popup_2">Galimberti nino</label>
+										</div>
+										<div class="checkbox-block">
+											<input type="checkbox" name="chose_box" id="coice_7_popup_2">
+											<label for="coice_7_popup_2">Dalcin</label>
+										</div>
+										<div class="checkbox-block">
+											<input type="checkbox" name="chose_box" id="coice_8_popup_2">
+											<label for="coice_8_popup_2">B&B italia</label>
+										</div>
+										<div class="checkbox-block">
+											<input type="checkbox" name="chose_box" id="coice_9_popup_2">
+											<label for="coice_9_popup_2">B.D. Barcelona design</label>
+										</div>
+										<div class="checkbox-block">
+											<input type="checkbox" name="chose_box" id="coice_10_popup_2">
+											<label for="coice_10_popup_2">Galimberti nino</label>
+										</div>
+										<div class="checkbox-block">
+											<input type="checkbox" name="chose_box" id="coice_11_popup_2">
+											<label for="coice_11_popup_2">B&B italia</label>
+										</div>
+										<div class="checkbox-block">
+											<input type="checkbox" name="chose_box" id="coice_12_popup_2">
+											<label for="coice_12_popup_2">B.D. Barcelona design</label>
+										</div>
+										<div class="checkbox-block">
+											<input type="checkbox" name="chose_box" id="coice_13_popup_2">
+											<label for="coice_13_popup_2">Galimberti nino</label>
+										</div>
 									</div>
-									<div class="checkbox-block">
-										<input type="checkbox" name="chose_box" id="coice_15_popup_2">
-										<label for="coice_15_popup_2">G. Moscatelli</label>
-									</div>
-									<div class="checkbox-block">
-										<input type="checkbox" name="chose_box" id="coice_16_popup_2">
-										<label for="coice_16_popup_2">Dalcin</label>
-									</div>
-									<div class="checkbox-block">
-										<input type="checkbox" name="chose_box" id="coice_17_popup_2">
-										<label for="coice_17_popup_2">B&B italia</label>
-									</div>
-									<div class="checkbox-block">
-										<input type="checkbox" name="chose_box" id="coice_18_popup_2">
-										<label for="coice_18_popup_2">B.D. Barcelona design</label>
-									</div>
-									<div class="checkbox-block">
-										<input type="checkbox" name="chose_box" id="coice_19_popup_2">
-										<label for="coice_19_popup_2">Galimberti nino</label>
-									</div>
-									<div class="checkbox-block">
-										<input type="checkbox" name="chose_box" id="coice_20_popup_2">
-										<label for="coice_20_popup_2">Dalcin</label>
-									</div>
-									<div class="checkbox-block">
-										<input type="checkbox" name="chose_box" id="coice_21_popup_2">
-										<label for="coice_21_popup_2">B&B italia</label>
-									</div>
-									<div class="checkbox-block">
-										<input type="checkbox" name="chose_box" id="coice_22_popup_2">
-										<label for="coice_22_popup_2">B.D. Barcelona design</label>
-									</div>
-									<div class="checkbox-block">
-										<input type="checkbox" name="chose_box" id="coice_23_popup_2">
-										<label for="coice_23_popup_2">Galimberti nino</label>
-									</div>
-									<div class="checkbox-block">
-										<input type="checkbox" name="chose_box" id="coice_24_popup_2">
-										<label for="coice_24_popup_2">B&B italia</label>
-									</div>
-									<div class="checkbox-block">
-										<input type="checkbox" name="chose_box" id="coice_25_popup_2">
-										<label for="coice_25_popup_2">B.D. Barcelona design</label>
-									</div>
-									<div class="checkbox-block">
-										<input type="checkbox" name="chose_box" id="coice_26_popup_2">
-										<label for="coice_26_popup_2">Galimberti nino</label>
-									</div>
-								</div>
 
-								<div class="coice-box">
-									<div class="checkbox-block">
-										<input type="checkbox" name="chose_box" id="coice_27_popup_2">
-										<label for="coice_27_popup_2">B.D. Barcelona design</label>
+									<div class="coice-box">
+
+										<div class="checkbox-block">
+											<input type="checkbox" name="chose_box" id="coice_14_popup_2">
+											<label for="coice_14_popup_2">Все</label>
+										</div>
+										<div class="checkbox-block">
+											<input type="checkbox" name="chose_box" id="coice_15_popup_2">
+											<label for="coice_15_popup_2">G. Moscatelli</label>
+										</div>
+										<div class="checkbox-block">
+											<input type="checkbox" name="chose_box" id="coice_16_popup_2">
+											<label for="coice_16_popup_2">Dalcin</label>
+										</div>
+										<div class="checkbox-block">
+											<input type="checkbox" name="chose_box" id="coice_17_popup_2">
+											<label for="coice_17_popup_2">B&B italia</label>
+										</div>
+										<div class="checkbox-block">
+											<input type="checkbox" name="chose_box" id="coice_18_popup_2">
+											<label for="coice_18_popup_2">B.D. Barcelona design</label>
+										</div>
+										<div class="checkbox-block">
+											<input type="checkbox" name="chose_box" id="coice_19_popup_2">
+											<label for="coice_19_popup_2">Galimberti nino</label>
+										</div>
+										<div class="checkbox-block">
+											<input type="checkbox" name="chose_box" id="coice_20_popup_2">
+											<label for="coice_20_popup_2">Dalcin</label>
+										</div>
+										<div class="checkbox-block">
+											<input type="checkbox" name="chose_box" id="coice_21_popup_2">
+											<label for="coice_21_popup_2">B&B italia</label>
+										</div>
+										<div class="checkbox-block">
+											<input type="checkbox" name="chose_box" id="coice_22_popup_2">
+											<label for="coice_22_popup_2">B.D. Barcelona design</label>
+										</div>
+										<div class="checkbox-block">
+											<input type="checkbox" name="chose_box" id="coice_23_popup_2">
+											<label for="coice_23_popup_2">Galimberti nino</label>
+										</div>
+										<div class="checkbox-block">
+											<input type="checkbox" name="chose_box" id="coice_24_popup_2">
+											<label for="coice_24_popup_2">B&B italia</label>
+										</div>
+										<div class="checkbox-block">
+											<input type="checkbox" name="chose_box" id="coice_25_popup_2">
+											<label for="coice_25_popup_2">B.D. Barcelona design</label>
+										</div>
+										<div class="checkbox-block">
+											<input type="checkbox" name="chose_box" id="coice_26_popup_2">
+											<label for="coice_26_popup_2">Galimberti nino</label>
+										</div>
 									</div>
-									<div class="checkbox-block">
-										<input type="checkbox" name="chose_box" id="coice_28_popup_2">
-										<label for="coice_28_popup_2">Galimberti nino</label>
+
+									<div class="coice-box">
+										<div class="checkbox-block">
+											<input type="checkbox" name="chose_box" id="coice_27_popup_2">
+											<label for="coice_27_popup_2">B.D. Barcelona design</label>
+										</div>
+										<div class="checkbox-block">
+											<input type="checkbox" name="chose_box" id="coice_28_popup_2">
+											<label for="coice_28_popup_2">Galimberti nino</label>
+										</div>
+										<div class="checkbox-block">
+											<input type="checkbox" name="chose_box" id="coice_29_popup_2">
+											<label for="coice_29_popup_2">B&B italia</label>
+										</div>
+										<div class="checkbox-block">
+											<input type="checkbox" name="chose_box" id="coice_30_popup_2">
+											<label for="coice_30_popup_2">B.D. Barcelona design</label>
+										</div>
+										<div class="checkbox-block">
+											<input type="checkbox" name="chose_box" id="coice_31_popup_2">
+											<label for="coice_31_popup_2">Galimberti nino</label>
+										</div>
+										<div class="checkbox-block">
+											<input type="checkbox" name="chose_box" id="coice_32_popup_2">
+											<label for="coice_32_popup_2">B.D. Barcelona design</label>
+										</div>
+										<div class="checkbox-block">
+											<input type="checkbox" name="chose_box" id="coice_33_popup_2">
+											<label for="coice_33_popup_2">Galimberti nino</label>
+										</div>
+										<div class="checkbox-block">
+											<input type="checkbox" name="chose_box" id="coice_34_popup_2">
+											<label for="coice_34_popup_2">B&B italia</label>
+										</div>
+										<div class="checkbox-block">
+											<input type="checkbox" name="chose_box" id="coice_35_popup_2">
+											<label for="coice_35_popup_2">B.D. Barcelona design</label>
+										</div>
+										<div class="checkbox-block">
+											<input type="checkbox" name="chose_box" id="coice_36_popup_2">
+											<label for="coice_36_popup_2">Galimberti nino</label>
+										</div>
 									</div>
-									<div class="checkbox-block">
-										<input type="checkbox" name="chose_box" id="coice_29_popup_2">
-										<label for="coice_29_popup_2">B&B italia</label>
+
+									<!-- Добавь кнопку отправики формы .submit-btn-box -->
+
+									<div class="submit-btn-box">
+
+										<button class="submit-btn" type="submit">Выбрать</button>
+
 									</div>
-									<div class="checkbox-block">
-										<input type="checkbox" name="chose_box" id="coice_30_popup_2">
-										<label for="coice_30_popup_2">B.D. Barcelona design</label>
-									</div>
-									<div class="checkbox-block">
-										<input type="checkbox" name="chose_box" id="coice_31_popup_2">
-										<label for="coice_31_popup_2">Galimberti nino</label>
-									</div>
-									<div class="checkbox-block">
-										<input type="checkbox" name="chose_box" id="coice_32_popup_2">
-										<label for="coice_32_popup_2">B.D. Barcelona design</label>
-									</div>
-									<div class="checkbox-block">
-										<input type="checkbox" name="chose_box" id="coice_33_popup_2">
-										<label for="coice_33_popup_2">Galimberti nino</label>
-									</div>
-									<div class="checkbox-block">
-										<input type="checkbox" name="chose_box" id="coice_34_popup_2">
-										<label for="coice_34_popup_2">B&B italia</label>
-									</div>
-									<div class="checkbox-block">
-										<input type="checkbox" name="chose_box" id="coice_35_popup_2">
-										<label for="coice_35_popup_2">B.D. Barcelona design</label>
-									</div>
-									<div class="checkbox-block">
-										<input type="checkbox" name="chose_box" id="coice_36_popup_2">
-										<label for="coice_36_popup_2">Galimberti nino</label>
-									</div>
-								</div>
+
+									<!--  -->
+
+								</form>
+
+								<!--  -->
 
 							</div>
 
@@ -1189,6 +1293,18 @@
 		<footer>
 			
 			<div class="footer">
+
+			<!-- Привет Лера 
+
+				Добавь эту ссыку в футер
+
+				В стилях все сделано
+
+			 -->
+
+				<a class="map-link" href="contacts.html"></a>
+
+			<!-- /////////////////////////////////////////////// -->
 				
 				<div class="row">
 					

@@ -1010,10 +1010,9 @@ button.white-btn,
     border-bottom: none !important;
 }
 
-
 .inner-menu {
     display: none;
-    width: 100%;
+    width: auto;
     padding: 40px 7%;
     position: absolute;
     top: 0;
@@ -1026,20 +1025,28 @@ button.white-btn,
     box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, .15);
 }
 
-.main-nav ul li.active-menu:hover .inner-menu {
+.inner-menu.active-menu {
     display: block !important;
-    padding-left: 7% !important;
-    padding-right: 7% !important;
-    animation: showborder .3s ease;
+    z-index: 4;
+    animation: showmenu .3s ease;
 }
 
-.main-nav ul li .inner-menu:hover {
+.inner-menu.no_fade {
     display: block !important;
-    padding-left: 7% !important;
-    padding-right: 7% !important;
 }
 
-@keyframes showborder {
+.inner-menu-list.catalog-nav li {
+    width: 20%;
+}
+
+.main-nav ul li .inner-menu {
+    box-shadow: none;
+    animation: none;
+    margin-top: 10px;
+    background: transparent;
+}
+
+@keyframes showmenu {
     0% {
         opacity: 0;
     }
@@ -1049,7 +1056,7 @@ button.white-btn,
     }
 }
 
-@-webkit-keyframes showborder {
+@-webkit-keyframes showmenu {
     0% {
         opacity: 0;
     }
@@ -1857,9 +1864,49 @@ section.promo-section {
 
 .catalog-nav li a {
     text-align: center;
+    position: relative;
 }
 
-.catalog-icon {
+.icon-box {
+    display: block;
+    height: 60px;
+}
+
+.icon-box .icon,
+.icon-box .icon-hover {
+    display: block;
+    width: 100%;
+    text-align: center;
+    height: 60px;
+}
+
+.icon-box .icon-hover {
+    display: none;
+}
+
+.icon-box .icon img,
+.icon-box .icon-hover img {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.icon-box .icon {
+    display: block;
+}
+
+.icon-box .icon-hover {
+    display: none;
+}
+
+.catalog-nav li a:hover .icon {
+    display: none;
+}
+
+.catalog-nav li a:hover .icon-hover {
+    display: block;
+}
+
+/*.catalog-icon {
     display: block;
     width: 100%;
     max-width: 86px;
@@ -1986,7 +2033,7 @@ section.promo-section {
 
 .catalog-nav li a:hover .catalog-icon:after {
     opacity: 1;
-}
+}*/
 
 .catalog-nav p {
     font-family: "PT Serif", Arial, Verdana, serif;
@@ -4090,6 +4137,18 @@ footer {
 .footer .row {
     padding-top: 10px;
     padding-bottom: 9px;
+/*    background-image: url(img/contacts_map_img.png);
+    background-position: 79% 0;
+    background-repeat: no-repeat;*/
+}
+
+.map-link {
+    display: block;
+    width: 271px;
+    height: 305px;
+    position: absolute;
+    top: -7px;
+    right: 24%;    
     background-image: url(img/contacts_map_img.png);
     background-position: 79% 0;
     background-repeat: no-repeat;
@@ -4411,6 +4470,11 @@ footer {
     vertical-align: top;
     width: 31%;
     padding: 25px 2% 10px 2%;
+}
+
+.submit-btn-box {
+    text-align: center;
+    padding: 20px 0 0 0;
 }
 
 /*-- /Popup --*/
