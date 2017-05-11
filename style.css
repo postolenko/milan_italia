@@ -1870,6 +1870,7 @@ section.promo-section {
 .icon-box {
     display: block;
     height: 60px;
+    margin: 4px 0;
 }
 
 .icon-box .icon,
