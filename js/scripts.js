@@ -490,7 +490,7 @@ $(document).ready(function() {
 
     function getShapeElemPosition() {
 
-        if( $(".rotate_element").lenght > 0 ) {
+        if( $(".rotate_element").length > 0 ) {
 
             setCoor = $(".content").offset().left + 40;
 
