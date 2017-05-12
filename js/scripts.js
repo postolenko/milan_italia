@@ -391,34 +391,39 @@ $(document).ready(function() {
 
     // --------------------------------------------------------------
 
-    $(".search-resp-btn").click(function() {
 
-        if($(".search-box").is(":hidden")) {
+    $(function() {
 
-            $(".search-box").fadeIn(300);
+        $(".search-resp-btn").click(function() {
 
-        } else {
+            if($(".search-box").is(":hidden")) {
 
-            $(".search-box").fadeOut(300);
+                $(".search-box").fadeIn(300);
 
-        }
+            } else {
 
-    });
+                $(".search-box").fadeOut(300);
 
-    $(document).mouseup(function (e){
-
-        if(bodyWidth <= 1024 ) {
-
-            hide_element = $('.search-box');
-
-            if (!hide_element.is(e.target)
-
-                && hide_element.has(e.target).length === 0) {
-
-                hide_element.fadeOut(300);
             }
 
-        }
+        });
+
+        $(document).mouseup(function (e){
+
+            if(bodyWidth <= 1024 ) {
+
+                hide_element = $('.search-box');
+
+                if (!hide_element.is(e.target)
+
+                    && hide_element.has(e.target).length === 0) {
+
+                    hide_element.fadeOut(300);
+                }
+
+            }
+
+        });
 
     });
 
@@ -492,13 +497,11 @@ $(document).ready(function() {
 
         if( $(".rotate_element").length > 0 ) {
 
+            console.log($(".rotate_element").length);
+
             setCoor = $(".content").offset().left + 40;
 
             if ( $(".rotate_element .left-coor").offset().left < setCoor) {
-
-                return true;
-
-            } else {
 
                 angel = 0;
 
@@ -525,7 +528,7 @@ $(document).ready(function() {
                 }, 45);
 
             }
-
+            
         }
 
     }
