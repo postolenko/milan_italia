@@ -490,13 +490,17 @@ $(document).ready(function() {
 
     function getShapeElemPosition() {
 
-        if( $(".rotate_element").length > 0 ) {
+        setCoor = $(".content").offset().left + 40;
+
+        if ( $(".rotate_element .left-coor").offset().left < setCoor) {
+
+            return true;
+
+        } else {
 
             angel = 0;
 
-            leftCoor = $(".rotate_element .left-coor").offset().left;
-
-            setCoor = $(".content").offset().left + 40;
+            leftCoor = $(".rotate_element .left-coor").offset().left;            
 
             getAngelInterval = setInterval(function() {
 
