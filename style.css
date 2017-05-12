@@ -915,7 +915,7 @@ button.white-btn,
 .header {
     padding: 20px 0;
     position: relative;
-    z-index: 2;  
+    z-index: 3;  
 }
 
 .header .row {
