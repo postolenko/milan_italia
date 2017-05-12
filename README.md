@@ -1,2 +1,9 @@
 # http://postolenko.github.io/milan_italia/index.html
 # http://postolenko.github.io/milan_italia/catalog.html
+# http://postolenko.github.io/milan_italia/about.html
+# http://postolenko.github.io/milan_italia/bloknot.html
+# http://postolenko.github.io/milan_italia/catalog_pust.html
+# http://postolenko.github.io/milan_italia/contacts.html
+# http://postolenko.github.io/milan_italia/factories.html
+# http://postolenko.github.io/milan_italia/product.html
+# http://postolenko.github.io/milan_italia/services.html
