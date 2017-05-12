@@ -59,6 +59,13 @@ $(document).ready(function() {
 
     // -----------------------------------------------
 
+    var angel;
+    var leftCoor;
+    var setCoor;
+    var getAngelInterval;
+
+    // ------------------------------------------------
+
     getInnerMenuPosition();
 
     $(window).resize(function() {
@@ -124,26 +131,16 @@ $(document).ready(function() {
 
         if(slidePhoto) {
 
-            // for( var indexPhoto = 0; indexPhoto <= $(".photo_img_box").length - 1; indexPhoto++ ) {
-
                 coorsSlidePhoto = slidePhoto.getBoundingClientRect();
 
                 topCoor = coorsSlidePhoto.top;
                 leftCoor = coorsSlidePhoto.left;
-                // leftCoor = parseInt( $(".photo_img_box:eq("+ indexPhoto +")").css("left") ) - parseInt( $(".photo_img_box:eq("+ indexPhoto +")").css("border-width") );
 
                 rightCoor = coorsSlidePhoto.right;
                 bottomCoor = coorsSlidePhoto.bottom;
 
                 slideImgWidth = rightCoor - leftCoor;
                 slideImgHeight = bottomCoor - topCoor;
-
-                // $(".photo_img_box:eq("+ indexPhoto +") img").css({
-                //     "min-width" : slideImgWidth + "px",
-                //     "min-height" : slideImgHeight + "px"
-                // });
-
-                // $(".photo_img_box:eq("+ indexPhoto +") img").offset({ left:leftCoor});
 
                 $(".photo_img_box img").css({
                     "min-width" : slideImgWidth + "px",
@@ -489,41 +486,35 @@ $(document).ready(function() {
 
     $(function() {
 
-        var angel = 0;
+        if( $(".rotate_element").length > 0 ) {
 
-        var leftCoor = $(".rotate_element .left-coor").offset().left;
+            angel = 0;
 
-        var setCoor = $(".content").offset().left + 40;
+            leftCoor = $(".rotate_element .left-coor").offset().left;
 
-        var getAngelInterval = setInterval(function() {
+            setCoor = $(".content").offset().left + 40;
 
-            angel = angel + 0.5;
+            getAngelInterval = setInterval(function() {
 
-            $(".rotate_element").css({
-                                        "-webkit-transform" : "rotate(" + angel + "deg)",
-                                        "-moz-transform" : "rotate(" + angel + "deg)",
-                                        "-ms-transform" : "rotate(" + angel + "deg)",
-                                        "-o-transform" : "rotate(" + angel + "deg)",
-                                        "transform" : "rotate(" + angel + "deg)"
-                                    });
+                angel = angel + 0.5;
 
-            if ( $(".rotate_element .left-coor").offset().left >= setCoor) {
+                $(".rotate_element").css({
+                                            "-webkit-transform" : "rotate(" + angel + "deg)",
+                                            "-moz-transform" : "rotate(" + angel + "deg)",
+                                            "-ms-transform" : "rotate(" + angel + "deg)",
+                                            "-o-transform" : "rotate(" + angel + "deg)",
+                                            "transform" : "rotate(" + angel + "deg)"
+                                        });
 
-                clearInterval(getAngelInterval);
+                if ( $(".rotate_element .left-coor").offset().left >= setCoor) {
 
-            }
+                    clearInterval(getAngelInterval);
 
-        }, 45);
+                }
 
-        // var catet_one = $(".main-content").height();
-        // var catet_two = 43;
-        // var tgAlfa = catet_two / catet_one;
+            }, 45);
 
-        // angel = tgAlfa * 60;
-
-        // $(".rotate_element").css({"transform" : "rotate("+ angel +"deg)"});
-
-        // console.log(angel);
+        }
 
     });
 
