@@ -68,6 +68,8 @@ $(document).ready(function() {
 
     getInnerMenuPosition();
 
+    getShapeElemPosition();
+
     $(window).resize(function() {
 
 
@@ -82,6 +84,8 @@ $(document).ready(function() {
         getPopupPosition();
 
         getInnerMenuPosition();
+
+        getShapeElemPosition();
 
         // ----------------------------
 
@@ -484,7 +488,7 @@ $(document).ready(function() {
 
     // --------------------------------------------------------------
 
-    $(function() {
+    function getShapeElemPosition() {
 
         if( $(".rotate_element").length > 0 ) {
 
@@ -516,7 +520,7 @@ $(document).ready(function() {
 
         }
 
-    });
+    }
 
     // --------------------------------------------------------------
 
