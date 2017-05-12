@@ -490,37 +490,41 @@ $(document).ready(function() {
 
     function getShapeElemPosition() {
 
-        setCoor = $(".content").offset().left + 40;
+        if( $(".rotate_element").lenght > 0 ) {
 
-        if ( $(".rotate_element .left-coor").offset().left < setCoor) {
+            setCoor = $(".content").offset().left + 40;
 
-            return true;
+            if ( $(".rotate_element .left-coor").offset().left < setCoor) {
 
-        } else {
+                return true;
 
-            angel = 0;
+            } else {
 
-            leftCoor = $(".rotate_element .left-coor").offset().left;            
+                angel = 0;
 
-            getAngelInterval = setInterval(function() {
+                leftCoor = $(".rotate_element .left-coor").offset().left;            
 
-                angel = angel + 0.5;
+                getAngelInterval = setInterval(function() {
 
-                $(".rotate_element").css({
-                                            "-webkit-transform" : "rotate(" + angel + "deg)",
-                                            "-moz-transform" : "rotate(" + angel + "deg)",
-                                            "-ms-transform" : "rotate(" + angel + "deg)",
-                                            "-o-transform" : "rotate(" + angel + "deg)",
-                                            "transform" : "rotate(" + angel + "deg)"
-                                        });
+                    angel = angel + 0.5;
 
-                if ( $(".rotate_element .left-coor").offset().left >= setCoor) {
+                    $(".rotate_element").css({
+                                                "-webkit-transform" : "rotate(" + angel + "deg)",
+                                                "-moz-transform" : "rotate(" + angel + "deg)",
+                                                "-ms-transform" : "rotate(" + angel + "deg)",
+                                                "-o-transform" : "rotate(" + angel + "deg)",
+                                                "transform" : "rotate(" + angel + "deg)"
+                                            });
 
-                    clearInterval(getAngelInterval);
+                    if ( $(".rotate_element .left-coor").offset().left >= setCoor) {
 
-                }
+                        clearInterval(getAngelInterval);
 
-            }, 45);
+                    }
+
+                }, 45);
+
+            }
 
         }
 
