@@ -63,6 +63,7 @@ $(document).ready(function() {
     var leftCoor;
     var setCoor;
     var getAngelInterval;
+    var setTimeRotate;
 
     // ------------------------------------------------
 
@@ -79,17 +80,25 @@ $(document).ready(function() {
 
         // ----------------------------
 
+        bodyWidth = w.innerWidth || e.clientWidth || g.clientWidth;
+
+        // ----------------------------
+
         getCoiceBoxHoverHeight(indexCoiceBox, coiseBoxCount);
 
         getPopupPosition();
 
         getInnerMenuPosition();
 
-        getShapeElemPosition();
+        clearInterval(setTimeRotate);
 
-        // ----------------------------
+        clearInterval(getAngelInterval);
 
-        bodyWidth = w.innerWidth || e.clientWidth || g.clientWidth;
+        setTimeRotate = setTimeout(function() {
+
+            getShapeElemPosition(0);
+
+        }, 300);
 
     });
 
@@ -203,35 +212,35 @@ $(document).ready(function() {
 
     // ----------------------------------------------------------------
 
-        $(function() {
+    $(function() {
 
-            $(".count-goods button").click(function() {
+        $(".count-goods button").click(function() {
 
-                countElementsInputIndex = $(this).parent(".count-goods").index(".count-goods");
+            countElementsInputIndex = $(this).parent(".count-goods").index(".count-goods");
 
-                countElementsVal = $(".count-goods:eq("+ countElementsInputIndex +") .count-val").val();
+            countElementsVal = $(".count-goods:eq("+ countElementsInputIndex +") .count-val").val();
 
-                if( countElementsVal <=  -1 ) {
+            if( countElementsVal <=  -1 ) {
 
-                    $(".count-val:eq("+ countElementsInputIndex +")").val(0);
+                $(".count-val:eq("+ countElementsInputIndex +")").val(0);
 
-                }
+            }
 
-                if( $(this).hasClass("minus") && countElementsVal > 0 ) {
+            if( $(this).hasClass("minus") && countElementsVal > 0 ) {
 
-                    countElementsVal--;
+                countElementsVal--;
 
-                } else if( $(this).hasClass("plus") ) {
+            } else if( $(this).hasClass("plus") ) {
 
-                    countElementsVal++;
+                countElementsVal++;
 
-                }
+            }
 
-                $(".count-goods:eq("+ countElementsInputIndex +") .count-val").val(countElementsVal);
-
-            });
+            $(".count-goods:eq("+ countElementsInputIndex +") .count-val").val(countElementsVal);
 
         });
+
+    });
 
     // ---------------------------------------------------------------
 
@@ -340,7 +349,7 @@ $(document).ready(function() {
 
             activeHeight = activeMenuList.outerHeight();
 
-            if(activeMenuBox.height() > 0) {
+            if( activeMenuBox.height() > 0 ) {
 
                 activeMenuBox.animate({
                     "height" : 0 + "px"
@@ -493,19 +502,23 @@ $(document).ready(function() {
 
     // --------------------------------------------------------------
 
-    function getShapeElemPosition() {
+    function getShapeElemPosition(angel) {
 
-        if( $(".rotate_element").length > 0 ) {
+        // var windowWidth = bodyWidth;
+
+        if( $(".rotate_element").length > 0 && bodyWidth >= 1280) {
 
             console.log($(".rotate_element").length);
 
-            setCoor = $(".content").offset().left + 40;
+            setCoor = $(".content").offset().left;
 
-            if ( $(".rotate_element .left-coor").offset().left < setCoor) {
+            if ( $(".rotate_element .left-coor").offset().left <= setCoor) {
+
+                setCoor = $(".content").offset().left + 40;
 
                 angel = 0;
 
-                leftCoor = $(".rotate_element .left-coor").offset().left;            
+                leftCoor = $(".rotate_element .left-coor").offset().left;           
 
                 getAngelInterval = setInterval(function() {
 
@@ -523,12 +536,14 @@ $(document).ready(function() {
 
                         clearInterval(getAngelInterval);
 
+                        $(".rotate_element").addClass("show_shape");
+
                     }
 
                 }, 45);
 
             }
-            
+
         }
 
     }
