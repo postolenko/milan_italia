@@ -69,7 +69,7 @@ $(document).ready(function() {
 
     getInnerMenuPosition();
 
-    getShapeElemPosition();
+    getShapeElemPosition(0);
 
     $(window).resize(function() {
 
@@ -90,6 +90,8 @@ $(document).ready(function() {
 
         getInnerMenuPosition();
 
+        // --------------------------------------
+
         clearInterval(setTimeRotate);
 
         clearInterval(getAngelInterval);
@@ -99,6 +101,7 @@ $(document).ready(function() {
             getShapeElemPosition(0);
 
         }, 300);
+
 
     });
 
@@ -504,11 +507,7 @@ $(document).ready(function() {
 
     function getShapeElemPosition(angel) {
 
-        // var windowWidth = bodyWidth;
-
         if( $(".rotate_element").length > 0 && bodyWidth >= 1280) {
-
-            console.log($(".rotate_element").length);
 
             setCoor = $(".content").offset().left;
 
